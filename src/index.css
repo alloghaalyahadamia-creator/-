@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+@layer base {
+  * {
+    border-color: rgba(255, 255, 255, 0.1);
+  }
+}
+
+@keyframes celestialSpin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes goldPulseShimmer {
+  0%, 100% {
+    opacity: 0.85;
+    filter: drop-shadow(0 0 15px rgba(212, 175, 55, 0.5));
+  }
+  50% {
+    opacity: 1;
+    filter: drop-shadow(0 0 30px rgba(255, 224, 130, 0.85));
+  }
+}
+
+.animate-celestial-spin {
+  animation: celestialSpin 60s linear infinite;
+}
+
+.animate-gold-shimmer {
+  animation: goldPulseShimmer 3s ease-in-out infinite;
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* Print Styles */
+@media print {
+  body {
+    background: white !important;
+    color: black !important;
+  }
+  #actions-toolbar-wrapper,
+  #sample-presets-bar,
+  #interactive-textarea-container,
+  button,
+  .pointer-events-none {
+    display: none !important;
+  }
+  #legendary-canvas-card {
+    border: none !important;
+    box-shadow: none !important;
+    background: transparent !important;
+  }
+}
+

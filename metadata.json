@@ -1,0 +1,8 @@
+{
+  "name": "Remix أسطوري - adam",
+  "description": "محرك رسومي Canvas 2D لتحويل النصوص العربية إلى رموز هندسية أسطورية فريدة مع تصدير فائق الدقة ومؤثرات تفاعلية",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
