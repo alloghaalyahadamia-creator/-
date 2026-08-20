@@ -1,5 +1,7 @@
 import React from 'react';
 import { Sparkles, Crown, Star } from 'lucide-react';
+import adamImg from '@/assets/adam.png';
+import yahiaImg from '@/assets/yahia.png';
 
 export const CreatorsSection: React.FC = () => {
   return (
@@ -36,7 +38,7 @@ export const CreatorsSection: React.FC = () => {
           <div className="relative shrink-0">
             <div className="relative">
               <img
-                src="/adam.png"
+                src={adamImg}
                 alt="آدم عبد الجواد"
                 className="w-28 h-28 sm:w-32 sm:h-32 rounded-2xl object-cover border-2 border-[#c9a84c]/60 shadow-[0_0_25px_rgba(201,168,76,0.35)] group-hover:border-[#e5c158] transition-all duration-300"
                 onError={(e) => {
@@ -74,7 +76,7 @@ export const CreatorsSection: React.FC = () => {
           <div className="relative shrink-0">
             <div className="relative">
               <img
-                src="/yahia.png"
+                src={yahiaImg}
                 alt="يحيى الشابي"
                 className="w-28 h-28 sm:w-32 sm:h-32 rounded-2xl object-cover border-2 border-[#c9a84c]/60 shadow-[0_0_25px_rgba(201,168,76,0.35)] group-hover:border-[#e5c158] transition-all duration-300"
                 onError={(e) => {

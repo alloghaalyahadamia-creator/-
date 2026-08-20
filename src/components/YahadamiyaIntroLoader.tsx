@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { YahadamiyaEmblem } from './YahadamiyaEmblem';
+import logoImg from '@/assets/logo.png';
 
 interface YahadamiyaIntroLoaderProps {
   onComplete?: () => void;
@@ -38,7 +39,7 @@ export const YahadamiyaIntroLoader: React.FC<YahadamiyaIntroLoaderProps> = ({ on
 
   return (
     <div
-      className={`fixed inset-0 z-50 flex flex-col items-center justify-center bg-[#07070d] text-zinc-100 overflow-hidden select-none transition-opacity duration-800 ease-in-out ${
+      className={`fixed inset-0 z-[100] flex flex-col items-center justify-center bg-[#07070d] text-zinc-100 overflow-hidden select-none transition-opacity duration-800 ease-in-out ${
         isFadingOut ? 'opacity-0 pointer-events-none' : 'opacity-100'
       }`}
     >
@@ -50,7 +51,7 @@ export const YahadamiyaIntroLoader: React.FC<YahadamiyaIntroLoaderProps> = ({ on
         <div className="relative mx-auto mb-6 w-52 h-52 sm:w-60 sm:h-60 md:w-64 md:h-64 flex items-center justify-center">
           <div className="relative w-full h-full rounded-full p-1.5 border-2 border-[#c9a84c]/60 bg-[#07070d]/90 backdrop-blur-md shadow-[0_0_50px_rgba(201,168,76,0.45)] animate-pulse flex items-center justify-center overflow-hidden">
             <img
-              src="/logo.png"
+              src={logoImg}
               alt="شَفْرَة اليحآدمية"
               className="w-full h-full rounded-full object-cover"
               onError={(e) => {

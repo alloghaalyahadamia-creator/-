@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import { Sparkles, Compass, Layers, Cpu, Scan, UserCheck, ChevronLeft } from "lucide-react";
 import { YahadamiyaEmblem } from "../YahadamiyaEmblem";
+import logoImg from "@/assets/logo.png";
 
 interface TimelineNode {
   id: number;
@@ -94,7 +95,7 @@ export function RadialOrbitalTimeline() {
           <div className="relative z-10 w-24 h-24 sm:w-28 sm:h-28 rounded-full p-1 border-2 border-[#c9a84c] bg-[#0a0a14] shadow-[0_0_30px_rgba(201,168,76,0.35)] flex items-center justify-center overflow-hidden">
             {!logoError ? (
               <img
-                src="/logo.png"
+                src={logoImg}
                 alt="شَفْرَة اليحآدمية"
                 className="w-full h-full rounded-full object-cover"
                 onError={() => setLogoError(true)}

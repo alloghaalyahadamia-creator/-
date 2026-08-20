@@ -31,6 +31,7 @@ import { ImageScannerDecoder } from './components/ImageScannerDecoder';
 import { DirectYahadamiyaWriter } from './components/DirectYahadamiyaWriter';
 import { AuthUI } from './components/ui/auth-fuse';
 import { YahadamiyaHero } from './components/ui/yahadamiya-hero';
+import logoImg from '@/assets/logo.png';
 
 import {
   Sparkles,
@@ -506,7 +507,7 @@ export default function App() {
             className="flex items-center gap-2.5 group cursor-pointer"
           >
             <img
-              src="/logo.png"
+              src={logoImg}
               alt="شَفْرَة اليحآدمية"
               className="w-8 h-8 sm:w-9 sm:h-9 rounded-full object-cover border border-[#c9a84c]/60 drop-shadow-[0_0_10px_rgba(201,168,76,0.6)] group-hover:scale-105 transition-transform"
               onError={(e) => {
@@ -694,7 +695,7 @@ export default function App() {
           <div className="relative mx-auto mb-2 w-36 h-36 sm:w-44 sm:h-44 md:w-48 md:h-48 flex items-center justify-center">
             <div className="relative w-full h-full rounded-full p-1 border-2 border-[#c9a84c]/60 bg-[#07070d]/90 backdrop-blur-md shadow-[0_0_40px_rgba(201,168,76,0.4)] transition-transform duration-500 hover:scale-105 flex items-center justify-center overflow-hidden">
               <img
-                src="/logo.png"
+                src={logoImg}
                 alt="شَفْرَة اليحآدمية"
                 className="w-full h-full rounded-full object-cover"
                 onError={(e) => {
